@@ -1,4 +1,5 @@
 学习笔记：
+
 一：方法
 学而不思则罔，思而不码则殆。
 1：有思路，直接码;没有参考直接参考题解、国际版most votes
@@ -7,6 +8,7 @@
 4：五毒神掌，多次练习，思考。
 
 二：解题思路
+
  1:<two-sum>
  method:循环遍历，利用hashMap，记录元素为key,index为value,通过差值判断是否存在值，存在则返回。
  complexity：time o(n),space o(n)
