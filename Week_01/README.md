@@ -15,31 +15,31 @@
 
  1:two-sum
  
- method:循环遍历，利用hashMap，记录元素为key,index为value,通过差值判断是否存在值，存在则返回。
+ 	method:循环遍历，利用hashMap，记录元素为key,index为value,通过差值判断是否存在值，存在则返回。
  
- complexity：time o(n),space o(n)
+ 	complexity：time o(n),space o(n)
  
  26:remove-duplicates-from-sorted-array
  
- method:因为是sorted array,故数组重复，肯定相邻。使用双指针，i,j。i快指针遍历，从1开始，j慢指针比较，不相等则更新，同时j++.
+ 	method:因为是sorted array,故数组重复，肯定相邻。使用双指针，i,j。i快指针遍历，从1开始，j慢指针比较，不相等则更新，同时j++.
  
- complexity:time o(n) space o(1)
+ 	complexity:time o(n) space o(1)
  
  66:plus-one
  
- method: 从右往左，数组末尾开始遍历，小于9，加一，return 循环，否则0，继续循环。最后判断数组首位是否为0，特殊情况9999。
+ 	method: 从右往左，数组末尾开始遍历，小于9，加一，return 循环，否则0，继续循环。最后判断数组首位是否为0，特殊情况9999。
  
- complexity:time o(n) space o(1)
+ 	complexity:time o(n) space o(1)
  
  189:rotate-array
  
- method:分析得出，旋转数组顺序为数组末尾从右向左，一次插入数组首位。直接使用js pop:删除数组末尾元素，onshift:数组的开头添加元素
+ 	method:分析得出，旋转数组顺序为数组末尾从右向左，一次插入数组首位。直接使用js pop:删除数组末尾元素，onshift:数组的开头添加元素
  
- complexity:time o(n) space o(1)
+ 	complexity:time o(n) space o(1)
  
  283:move-zeroes
  
- method:双指针：两次遍历：1：i快指针遍历,j记录非零。2:j之后赋值0
+ 	method:双指针：两次遍历：1：i快指针遍历,j记录非零。2:j之后赋值0
  
- complexity: time o(n) space o(1)
+ 	complexity: time o(n) space o(1)
  
