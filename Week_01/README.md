@@ -3,18 +3,24 @@
 一：方法
 学而不思则罔，思而不码则殆。
 1：有思路，直接码;没有参考直接参考题解、国际版most votes
+
 2：不能死磕，不要死磕。
+
 3：可以一个解题方法，比如双指针，可以通过大量练习题掌握，循序渐进。
+
 4：五毒神掌，多次练习，思考。
 
 二：解题思路
 
- 1:<two-sum>
+ 1:two-sum
  method:循环遍历，利用hashMap，记录元素为key,index为value,通过差值判断是否存在值，存在则返回。
+ 
  complexity：time o(n),space o(n)
  
- 26:<remove-duplicates-from-sorted-array>
+ 26:remove-duplicates-from-sorted-array
+ 
  method:因为是sorted array,故数组重复，肯定相邻。使用双指针，i,j。i快指针遍历，从1开始，j慢指针比较，不相等则更新，同时j++.
+ 
  complexity:time o(n) space o(1)
  
  66:<plus-one> 
