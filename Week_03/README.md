@@ -8,15 +8,20 @@
 
 
 const recursion = (level, params) =>{
+
    // 1：recursion terminator
+   
    if(level > MAX_LEVEL){
      process_result
      return 
    }
+   
    // 2：process current level
+   
    process(level, params)
    
    // 3：drill down
+   
    recursion(level+1, params)
    
    //4：clean current level status if needed   
