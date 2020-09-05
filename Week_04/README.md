@@ -1,16 +1,16 @@
-127 word-ladder(单词接龙)
+127： word-ladder(单词接龙)
 
  	解题思路：
 
  	1:要想单词接龙，且每次只可以改变一个字母。所以首先遍历所有单词可能的邻接单词，存储map。
 
- 	2：默认起始单词为第一个，记录当前路线1.同时记录所以访问过的单词，visited.防止重复访问
+ 	2：默认起始单词为第一个，记录当前路径1.同时记录所以访问过的单词，visited.防止重复访问
 
- 	3：查找 queue队列当前单词的所有可能邻接单词的单词集合，遍历集合，查找是否endWord.没有则判断是否访问访问过单词，未访问过则记录，同时路线递增。
+ 	3：查找 queue队列当前单词的所有可能邻接单词的单词集合，遍历集合，查找是否endWord.没有则判断是否访问访问过单词，未访问过则记录，同时路径递增。
 
  	time o(wordList.length*beginWord.length) space o(n)
 
-455 assign-cookies(分发饼干)
+455： assign-cookies(分发饼干)
 
  	解题思路：
 
@@ -20,7 +20,7 @@
 
  	time o(n) space o(1)
 
-860 lemonade-change(柠檬水找零)
+860： lemonade-change(柠檬水找零)
 
  	解题思路：
 
@@ -30,7 +30,7 @@
 
  	time o(n) space o(1)
 
-874 walking-robot-simulation(模拟行走机器人)
+874： walking-robot-simulation(模拟行走机器人)
 
  	解题思路：
 
