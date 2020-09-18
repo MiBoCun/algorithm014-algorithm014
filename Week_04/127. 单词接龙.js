@@ -1,7 +1,7 @@
     var ladderLength = function(beginWord, endWord, wordList) {
         let len=beginWord.length;
-        let map=new Map() //保存所有单词的所有可能的连接单词      
-       
+        let map=new Map() //保存所有单词的所有可能的连接单词   
+        
         for (let w of wordList) {
             for(let i=0;i<len;i++) {
                 let newW=w.substring(0,i)+'*'+w.substring(i+1,len)
@@ -17,7 +17,6 @@
             let curNode=queue.shift()
             let curW=curNode[0]
             let curL=curNode[1]
-
             for (let i=0;i<len;i++) {
                 let qWord=curW.substring(0,i)+'*'+curW.substring(i+1,len)
                 if (map.has(qWord)) {
@@ -32,7 +31,6 @@
                         }
                     }
                 }
-
             }
         }
         return 0
