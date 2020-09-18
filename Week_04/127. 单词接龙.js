@@ -28,7 +28,7 @@
                         }
                         if (!visited.has(tem)) {
                             visited.add(tem)
-                            queue.push(tem,curL+1])
+                            queue.push([tem,curL+1])
                         }
                     }
                 }
