@@ -3,13 +3,14 @@ const visited = new Set()
 
  const dfs = node => {
 
-   if (visited.has(node)) return
+     if (visited.has(node)) return
   
-   visited.add(node)
+     visited.add(node)
   
-   dfs(node.left)
+     dfs(node.left)
   
-   dfs(node.right)
+     dfs(node.right)
+   
 }
 
 岛屿问题、被包围区域。类似二维数组，经分析，基本适用BFS算法。区别在于被搜索过的数据记录及具体分叉情况(搜索节点)。
