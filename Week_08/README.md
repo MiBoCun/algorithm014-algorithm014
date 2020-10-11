@@ -1,17 +1,17 @@
 冒泡排序：
 
 
-function bubbleSort(arr) {
+  function bubbleSort(arr) {
 
-    var len = arr.length;
+     let len = arr.length;
     
-    for(let i = 0; i < len - 1; i++) {
+     for(let i = 0; i < len - 1; i++) {
     
-        for(var j = 0; j < len - 1 - i; j++) {
+        for(let j = 0; j < len - 1 - i; j++) {
         
             if(arr[j] > arr[j+1]) {        // 相邻元素两两对比
             
-                var temp = arr[j];        // 元素交换
+                let temp = arr[j];        // 元素交换
                 
                 arr[j] = arr[j+1];
                 
@@ -20,18 +20,18 @@ function bubbleSort(arr) {
         }
     }
     return arr;
-}
+ }
 
 选择排序：
 
 
-function selectSort(arr) {
+  function selectSort(arr) {
 
-    let len = arr.length;
+     let len = arr.length;
     
-    let minIndex, temp;
+     let minIndex, temp;
     
-    for(let i = 0; i < len - 1; i++) {
+     for(let i = 0; i < len - 1; i++) {
     
         minIndex = i;
         
@@ -47,7 +47,7 @@ function selectSort(arr) {
         arr[i] = arr[minIndex];
         
         arr[minIndex] = temp;
-    }
-    return arr;
-}
+     }
+     return arr;
+ }
 
