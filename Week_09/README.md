@@ -1,5 +1,4 @@
-63. 不同路径 II 
-动态规划
+63. 不同路径 II 动态规划
 
    const uniquePathsWithObstacles = (obstacleGrid) => {
 
