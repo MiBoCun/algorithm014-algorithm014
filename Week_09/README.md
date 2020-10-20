@@ -28,17 +28,17 @@
         dp[0][i] = obstacleGrid[0][i] == 1 || dp[0][i - 1] == 0 ? 0 : 1;
     
     }
-  // 迭代
+     // 迭代
   
-   for (let i = 1; i < m; i++) {
+    for (let i = 1; i < m; i++) {
   
-     for (let j = 1; j < n; j++) {
+       for (let j = 1; j < n; j++) {
     
           dp[i][j] = obstacleGrid[i][j] == 1 ?  0 :   dp[i - 1][j] + dp[i][j - 1];
      }
     
-   }
+    }
   
-   return dp[m - 1][n - 1]; // 到达(m-1,n-1)的路径数
+    return dp[m - 1][n - 1]; // 到达(m-1,n-1)的路径数
   
-};
+  };
