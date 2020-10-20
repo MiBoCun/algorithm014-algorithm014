@@ -1,7 +1,7 @@
 63. 不同路径 II 
 动态规划
 
-  const uniquePathsWithObstacles = (obstacleGrid) => {
+   const uniquePathsWithObstacles = (obstacleGrid) => {
 
      if (obstacleGrid[0][0] == 1) return 0; // 出发点就被障碍堵住 
   
